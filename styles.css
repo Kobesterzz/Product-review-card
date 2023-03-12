@@ -1,0 +1,87 @@
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 400px;
+}
+
+.perfume{
+   width:330px;
+   border-top-left-radius:25px;
+   border-bottom-left-radius:25px;
+}
+
+.info-side{
+    margin-left:30px;
+}
+
+.title{
+    font-family:Montserrat;
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+}
+
+.intro{
+    font-family:Fraunces;
+    width:300px;
+}
+
+.paragraph{
+    font-family:Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+}
+
+.price{
+    font-family:Fraunces;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.curr-price{
+    color:  rgb(0, 91, 91);
+}
+
+.past-price{
+    color: rgb(100, 100, 100);
+}
+
+.button{
+    width:300px;
+    height:50px;
+    background-color:  rgb(1, 105, 105);
+    border: 0px;
+    border-radius: 10px;
+    color:aliceblue;
+    font-family:Montserrat;
+}
+
+.button:hover{
+    transition-duration: 1s;
+    background-color:  rgb(0, 56, 56);
+}
+
+@media screen and (max-width:700px){
+    .card{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .perfume{
+        width:330px;
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        border-bottom-left-radius:0px;
+        content: url(./images/image-product-mobile.jpg);
+     }
+     .paragraph{
+        width:280px;
+     }
+     .intro{
+        width:300px;
+     }
+}
